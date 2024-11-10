@@ -86,6 +86,7 @@ footer{
 
 .main{
   margin-top: 100px;
+  background-color: #634823;
 
 }
 
@@ -95,6 +96,7 @@ footer{
   width: 40vh;
   margin-left: 50px;
   font-family: "Comic Sans MS";
+  background-color: #f1f1f1;
 }
 
 #foodpics-image{
@@ -126,6 +128,7 @@ footer{
   padding: 20px;
   display: flex;
   width:70%;
+  color:#f1f1f1;
 }
 
 .ingredients{
@@ -151,11 +154,7 @@ footer{
 @media screen and (max-width: 615px) {
   .fsection{
     flex-direction: column;
-    border: red 1px solid;
     align-items: center;
     margin-left: -50px;
-  }
-  .recipe{
-    border: blue 1px solid;
   }
 }   

@@ -1,0 +1,35 @@
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    opacity: 0;
+    transform: translateX(-100%); 
+    /* off screen to the left */
+    animation: slideInFromLeft 0.8s ease-out forwards; 
+    /* forwards so it doesn't snap */
+}
+
+.recipe {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.8s;
+}

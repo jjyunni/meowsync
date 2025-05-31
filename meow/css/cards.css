@@ -1,0 +1,173 @@
+.fsection {
+    display: flex;
+    margin: 80px 0;
+}
+
+.main {
+    margin-top: 100px;
+    background-color: #b6997c;
+}
+
+.cuisine-filters {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cuisine-btn,
+#reset-filter {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cuisine-btn:hover,
+#reset-filter:hover {
+    background-color: #a38268;
+    color: white;
+}
+
+
+body.korean .main {
+    background-color: #9F68A3;
+}
+
+body.chinese .main {
+    background-color: #6BA368;
+}
+
+body.japanese .main {
+    background-color: #6889A3;
+}
+
+
+.card {
+    border: 5px solid rgb(61, 61, 61);
+    border-radius: 10px;
+    color: rgb(61, 61, 61) !important;
+    padding: 20px;
+    width: 50vh;
+    margin-left: 50px;
+    background-color: #f1f1f1;
+    height: 40%;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.2);
+}
+
+.favorite-btn.favorited {
+    color: pink;
+}
+
+.foodpics-image {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.ftitle {
+    display: flex;
+    width: 100%;
+    background-color: #a38268;
+    color: #f1f1f1;
+    font-size: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.times {
+    color: #f1f1f1;
+    background-color: #a38268;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: monospace;
+}
+
+.recipe {
+    padding: 20px;
+    display: flex;
+    width: 70%;
+    color: #f1f1f1;
+}
+
+.ingredients {
+    padding: 10px;
+}
+
+.instructions {
+    padding: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+@media screen and (max-width: 800px) {
+    .bloc-1 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .recipe {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 615px) {
+
+    .cuisine-btn,
+    #reset-filter {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .fsection {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -50px;
+    }
+}

@@ -1,0 +1,45 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body {
+    font-family: 'Kaisei HarunoUmi', serif;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.aboutus {
+    margin: 110px;
+}
+
+body.dark .main {
+    background-color: #3e2a1d;
+    color: #f1f1f1;
+}
+
+.dark {
+    background-color: #503d2b;
+}
+
+body.dark .topnav {
+    background-color: #503d2b;
+}
+
+.dark .topnav .title {
+    color: #c09d87;
+}
+
+
+
+
